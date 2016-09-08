@@ -36,7 +36,7 @@ _rotr.apis.createApp = function() {
         var appKey = _rds.k.app(appId);
 
         //向七牛添加一个index.html文件
-        var qnres1 = yield _qn.uploadDataCo(templates.baseHtml, uid + '/' + appName + '/index.html');
+        var qnres1 = yield _qn.uploadDataCo(templates.baseHtml, uid + '/' + appName + '/TeaInfo.html');
         var qnres2 = yield _qn.uploadDataCo(templates.baseJs, uid + '/' + appName + '/index.js');
         //var qnres3 = yield _qn.uploadDataCo('body {\n \n \n}', uid + '/' + appName + '/index.css');
 
